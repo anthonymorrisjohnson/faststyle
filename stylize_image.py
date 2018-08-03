@@ -69,14 +69,14 @@ if __name__ == '__main__':
 
     # Filter the input image.
     with tf.Session() as sess:
-        print 'Loading up model...'
+        print('Loading up model...')
         saver.restore(sess, model_path)
-        print 'Evaluating...'
+        print('Evaluating...')
         img_out = sess.run(Y, feed_dict={X: img_4d})
 
     # Postprocess + save the output image.
-    print 'Saving image.'
+    print ('Saving image.')
     img_out = np.squeeze(img_out)
     utils.imwrite(output_img_path, img_out)
 
-    print 'Done.'
+    print ('Done.')
