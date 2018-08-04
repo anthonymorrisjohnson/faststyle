@@ -1,2 +1,2 @@
-model_checkpoint_path: "aha_1_final.ckpt"
-all_model_checkpoint_paths: "aha_1_final.ckpt"
+model_checkpoint_path: "aha_3_final.ckpt"
+all_model_checkpoint_paths: "aha_3_final.ckpt"
